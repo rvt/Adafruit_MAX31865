@@ -82,6 +82,7 @@ class Adafruit_MAX31865 {
  private:
   int8_t _sclk, _miso, _mosi, _cs;
 
+ protected:
   void readRegisterN(uint8_t addr, uint8_t buffer[], uint8_t n);
 
   uint8_t  readRegister8(uint8_t addr);
